@@ -1,0 +1,300 @@
+@import "mobile"
+
+$font1: 'Lobster', cursive
+$font2: 'EB Garamond', sans-serif
+
+
+html, body, footer
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  background-color: #f2f2f2
+
+
+a
+  text-decoration: none
+
+.home
+  img
+    display: none
+    cursor: pointer
+    right: 50px
+
+nav
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  font-family: $font2
+  #logo
+    img
+      display: block
+
+
+  ul
+    list-style: none
+    // display: inline
+
+    li
+      text-transform: uppercase
+      float: left
+      padding-left: 35px
+      font-size: 14px
+      a
+        color: #1d2d23
+
+.mobile-menu
+  display: flex
+  z-index: 200
+  flex-direction: column
+  justify-content: center
+  display: none
+  nav ul
+    display: flex
+    flex-direction: column !important
+    line-height: 3
+    // margin: auto
+    width: 100%
+    display: none
+    float: left
+    text-align: center
+    // min-height: 300px
+    a:hover
+      background-color: #1d2d23
+      padding: 10px
+      color: #f2f2f2
+.closebtn
+  right: 20px
+  z-index: 230
+  position: absolute
+  display: none
+  button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    font-size: 18px
+
+.about
+  background-image: url('../img/hadassah-treasures-nature.jpg')
+  width: 100%
+  height: 90vh
+  position: relative
+  background-size: cover
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+  flex-direction: column !important
+  h2
+    font-family: $font2
+    font-size: 30px
+  .about-content
+    text-align: center
+    color: #1d2d23
+    font-family: $font2
+    font-weight: 300
+    font-size: 16px
+    max-width: 650px
+    padding: 15px 30px
+    background: white
+    opacity: 0.8
+
+.products
+  background-image: url('../img/handmade-natural-soap.jpg')
+  width: 100%
+  height: 100vh
+  background-size: cover
+  background-position: bottom
+  position: relative
+  margin: 0
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: flex-end
+  font-family: $font2
+  line-height: 2
+  color: #1d2d23
+  h3
+    font-size: 25px
+  button
+    margin-right: 300px
+    width: 180px
+    height: 40px
+    background: Transparent
+    border: 2px #1d2d23 solid
+    font-size: 15px
+    cursor: pointer
+    font-family: $font2
+  button:hover
+    background-color: #1d2d23
+    color: #fefefe
+  .products-content
+    padding-right: 200px
+
+/* The Modal (background) */
+.modal
+    visibility: hidden
+    position: fixed /* Stay in place */
+    z-index: 100 /* Sit on top */
+    padding-top: 100px /* Location of the box */
+    left: 0
+    top: 0
+    width: 100% /* Full width */
+    height: 100% /* Full height */
+    overflow: auto /* Enable scroll if needed */
+    background-color: rgb(0,0,0) /* Fallback color */
+    background-color: rgba(0,0,0,0.4) /* Black w/ opacity */
+.modal.active
+  visibility: visible
+.modal-content.active
+  visibility: visible
+
+.modal-content
+  visibility: hidden
+  background: White
+  padding: 40px
+  margin: 20px 40px 120px 40px
+  // height: 100%
+  position: relative
+  font-family: $font2
+  border: 5px solid #1d2d23
+  .close
+    cursor: pointer
+    font-size: 24px
+    float: right
+
+
+.workshop
+  // background-image: url('../img/handmade-soap.jpg')
+  width: 100%
+  height: 120vh
+  overflow-y: hidden
+  background-size: cover
+  margin: auto
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  position: relative
+  font-family: $font2
+  color: #1d2d23
+  button
+    margin-right: 300px
+    width: 180px
+    height: 40px
+    background: Transparent
+    border: 2px #1d2d23 solid
+    font-size: 15px
+    cursor: pointer
+    font-family: $font2
+    z-index: 50
+    a
+      color: #1d2d23
+  button:hover
+    background-color: #1d2d23
+    a
+      color: #fefefe
+
+  img
+    position: absolute
+    bottom: 40px
+    right: 80px
+    // opacity: 0.75
+
+  h2
+    // background: #fefefe
+    padding: 15px
+    z-index: 10
+.workshop-content
+  // min-height: 400px
+  min-width: 500px
+  background-color: white
+  padding: 20px
+  z-index: 10
+  border: 7px  #1d2d23
+  border-width: thick
+  border-style: double
+.prev, .next
+  cursor: pointer
+  position: absolute
+  z-index: 30
+  top: 45%
+  width: auto
+  padding: 2px 16px
+  color: black
+  font-weight: bold
+  font-size: 18px
+  border-top: 1px solid #1d2d23
+  border-bottom: 1px solid #1d2d23
+.prev
+  left: 15%
+.next
+  right: 15%
+
+.contact
+  background-image: url('../img/contact-hadassah-treasures.jpg')
+  background-size: cover
+  height: 100vh
+  width: 100%
+  background-position: center
+  margin: auto
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: center
+  flex-wrap: wrap
+  color: #1d2d23
+  .contact-form
+    margin-right: 100px
+    opacity: 0.8
+    padding: 50px
+    border: 10px solid #1d2d23
+    font-family: $font2
+    text-transform: capitalize
+    h2
+      background: #1d2d23
+      color: #fefefe
+      text-align: center
+      padding: 20px
+    form
+      line-height: 2
+    input, textarea
+      background: Transparent
+      border: none
+      border-bottom: 1px dotted black
+    label,
+      margin-right: 20px
+      font-weight: 500
+      background: #fefefe
+      padding: 5px 15px
+    button
+        width: 100px
+        height: 30px
+        background: Transparent
+        border: 2px #1d2d23 solid
+        font-size: 17px
+        cursor: pointer
+        font-family: $font2
+        margin-top: 20px
+        input
+          border-bottom: none
+        a
+          color: #1d2d23
+    button:hover
+        background-color: #1d2d23
+        input
+          color: #fefefe
+
+  .links
+    img
+      padding: 5px 2px
+
+
+footer
+  padding: 20px
+  font-family: $font2
+  font-size: 13px
+  color: #1d2d23
+  a
+    color: #1d2d23

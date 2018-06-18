@@ -1,0 +1,64 @@
+@media screen and (max-width:670px){
+
+  nav img{
+    display: block !important;
+    right: 50px;
+  }
+
+  /* nav a img{
+    display: none !important;
+  } */
+
+
+  .mobile-menu{
+    display: flex !important
+  }
+
+  .mobile-menu nav ul{
+    display: flex !important
+  }
+
+
+  .home nav ul li{
+    display: none
+  }
+
+  .closebtn{
+    display: block !important
+  }
+
+  .products{
+    align-items: center !important
+  }
+
+  .products button{
+    margin-right: 50px !important
+  }
+
+  .products-content{
+    padding-right: 10px !important
+  }
+
+  .workshop-content{
+    min-width: 0 !important;
+    margin: 10px
+  }
+
+  .workshop-content button{
+    display: none
+  }
+
+  .prev{
+    left: 0 !important
+  }
+  .next{
+    right: 0 !important
+  }
+
+  .contact{
+    justify-content: center !important;
+  }
+  .contact-form{
+    margin-right: 0 !important
+  }
+}
